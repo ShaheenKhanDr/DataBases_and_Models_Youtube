@@ -1,0 +1,8 @@
+Project Briefing
+Under the guidance of my mentor, Sir Wajid Ali Khan, a structured relational data model (SQL-based) was developed for YouTube channels, incorporating entities like channels, playlists, videos, and comments, in accordance with the model from the previous assignment. To establish relationships between entities, the model included primary keys, foreign keys, and related attributes. As sample data, the records were expanded to ten (10) records, though.
+Similarly, a semi-structured/non-relational data model based on NoSQL utilizing MongoDB containing entities like channels, playlists, videos, and comments was developed for YouTube channels. Ten (10) records in key-value form were supplied as sample data.
+Next, a Python program was written to connect to the structured relational data model from MySQL, showing the count of rows, a sample of three rows from each table, and using a join to show data between two tables using the primary key and foreign key relationship.
+Then, a second Python program was designed to establish a connection to, a semi-structured data model from MongoDB. It displays the number of rows, a sample of three rows from each collection, and data from two collections joined together using a primary key and foreign key relationship. Although there are ten documents in each collection, I have only included one screenshot per collection to keep it concise and manageable. 
+In the end, at some point, the GitHub link was made available to the public, and the project was submitted to admin through Google-Form platform as well.
+Link to visit my GitHub Presence: 
+https://github.com/ShaheenKhanDr 

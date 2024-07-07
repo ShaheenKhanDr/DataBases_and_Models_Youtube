@@ -10,7 +10,7 @@ db_connection = mysql.connector.connect(
 
 # Let's create a cursor object
 cursor = db_connection.cursor()
- 
+# Let's define a function
 # Let's define a function to count the number of rows in each table
 def count_rows(table_name):
     query = f"SELECT COUNT(*) FROM {table_name}"

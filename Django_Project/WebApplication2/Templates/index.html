@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Decision Support System</title>
+    <style>
+        select {
+            width: 300px;
+            height: 150px; /* Adjust height for better visibility of multiple selections */
+        }
+    </style>
+</head>
+<body>
+  
+    <h1>Medical Decision Support System</h1>
+    <form action="/get_remedy" method="post">
+        <label for="symptoms">Select signs and symptoms:</label><br>
+        <select id="symptoms" name="symptoms" multiple>
+            {% for symptom in symptoms %}
+                <option value="{{ symptom }}">{{ symptom }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <input type="submit" value="Find Remedy">
+    </form>
+    
+    {% if remedy %}
+        <h2>Remedy: {{ remedy }}</h2>
+    {% endif %}
+</body>
+</html>

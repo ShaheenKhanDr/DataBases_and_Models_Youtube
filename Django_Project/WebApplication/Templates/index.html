@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Decision Support System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        label, input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #109e03;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Decision Support System</h1>
+        <form method="POST">
+            <label for="signs_symptoms">Enter Patient's Signs and Symptoms:</label>
+            <input type="text" id="signs_symptoms" name="signs_symptoms" required>
+            <button type="submit">Find Remedy</button>
+        </form>
+        {% if remedy %}
+            <h2>Remedy: {{ remedy }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
